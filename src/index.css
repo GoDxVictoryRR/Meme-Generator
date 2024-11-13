@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    margin: 0;
+  }
+
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+  padding: 36px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+
+  height: 65px;
+  background: linear-gradient(90deg,#22803e 1.18%,#A626D3 100%);
+  color: rgb(234, 147, 208);
+  padding: 20px;
+}
+
+.header--img{
+  height: 100%;
+  margin-right: auto;
+}
+.header--title{
+  font-size: 1.25 rem;
+  margin-right: auto;  
+}
+
+.header--pro{
+  font-size: 6.75 rem;
+  font-weight: 500;
+}
+
+.form{
+  display: grid;
+  grid-template:40px 40px /  1fr 1fr;
+  gap: 17px;
+}
+.form--button{
+  grid-column: 1/-1;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg,#c05d74 1.14%,#A818DA 100%);
+  color: rgb(208, 223, 200);
+  border:#D5D4D8;
+  cursor: pointer;
+}
+.form--input{
+  grid-column: 1/-1;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+.meme--image{
+  max-width: 100%;
+}
+
+.meme{
+  padding: 1px;
+  position: relative;}
+.meme>h2{
+  color: #c05d74;
+  font-size: 100px;
+}
+.meme>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meme--textt{
+  position:absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.meme--textb{
+  position:absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateY(-50%);
 }
